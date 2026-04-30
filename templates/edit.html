@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Редактировать карточку</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin.css') }}">
+</head>
+<body>
+
+<h1 class="cards-title">Редактировать карточку: {{ card.title }}</h1>
+
+<form method="POST" enctype="multipart/form-data" class="admin-form">
+    {{ form.hidden_tag() }}
+
+    <div class="form-group">
+        {{ form.title.label(class="form-label") }}
+        {{ form.title(class="form-input") }}
+        {% for error in form.title.errors %}
+            <span class="error">{{ error }}</span>
+        {% endfor %}
+    </div>
+
+    <div class="form-group">
+        {{ form.category.label(class="form-label") }}
+        {{ form.category(class="form-input") }}
+    </div>
+
+    <div class="form-group">
+        {{ form.year.label(class="form-label") }}
+        {{ form.year(class="form-input") }}
+    </div>
+
+    <div class="form-group">
+        {{ form.tech1.label(class="form-label") }}
+        {{ form.tech1(class="form-input") }}
+    </div>
+
+    <div class="form-group">
+        {{ form.tech2.label(class="form-label") }}
+        {{ form.tech2(class="form-input") }}
+    </div>
+
+    <div class="form-group">
+        {{ form.image.label(class="form-label") }}
+        {{ form.image(class="form-input-file") }}
+
+        {% if card.image %}
+            <p style="margin-top:10px; color:#aaa;">Текущее изображение:</p>
+            <img src="{{ card.image }}" class="card-image">
+        {% endif %}
+    </div>
+
+    <button type="submit" class="button">Сохранить изменения</button>
+</form>
+
+<a href="{{ url_for('admin.admin_index') }}" class="btn-edit" style="margin-top:20px; display:inline-block;">
+    ← Назад в админку
+</a>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Admin{% endblock %}
+{% block content %}
+
+
+<body style="margin:0;">
+
+<div style="
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;   /* по оси X */
+    align-items: flex-start;   /* прижать к верху */
+    padding-top: 15vh;         /* 15% от высоты окна */
+">
+    <div style="text-align: center;">
+        <h2>Вход в админку</h2>
+
+        {% if error %}
+            <p style="color:red;">{{ error }}</p>
+        {% endif %}
+
+        <form method="POST">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+
+            <input type="text" name="username" placeholder="Логин"><br><br>
+            <input type="password" name="password" placeholder="Пароль"><br><br>
+
+            <button type="submit">Войти</button>
+        </form>
+    </div>
+</div>
+
+</body>
+
+{% endblock content %}

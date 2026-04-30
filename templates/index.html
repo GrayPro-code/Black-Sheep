@@ -1,0 +1,717 @@
+{% extends "base.html" %}
+{% block title %}Black Sheep{% endblock %}
+{% block content %}
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="{{ url_for('static', filename='img/profile/profile-bg.jpg') }}" alt="" data-aos="fade-in">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2>Hi, I'm Alex Gray</h2>
+            <p>I'm a <span class="typed" data-typed-items="Developer, Designer, Freelancer"></span><span class="typed-cursor" aria-hidden="true"></span></p>
+            <div class="social-links">
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+
+
+
+
+
+
+        </div>
+
+
+        <div id="social-block">
+          <ul id="fu">
+            <li class="fi" style="--i:4;"><a href="#">Home 💻</a></li>
+            <li class="fi" style="--i:3;"><a href="#about">About &#127839;</a></li>
+            <li class="fi" style="--i:2;"><a href="#contact">Contact &#127829;</a></li>
+            <li class="fi" style="--i:1;"><a target="_blank" href="https://www.instagram.com/kingfood_orsha">Instagram
+            &#127790;</a></li>
+          </ul>
+        </div>
+
+
+
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">About Me</span>
+        <h2>About Me</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="150">
+            <div class="profile-card">
+              <div class="profile-header">
+                <div class="profile-avatar">
+
+                  <img src="{{ url_for('static', filename='img/profile/profile-me.jpg') }}" class="img-fluid" alt="">
+                  
+                  <div class="status-indicator"></div>
+                </div>
+
+                <h4 id="explode-title">Alex  Gray</h4>
+
+                
+                <span class="role">Full Stack Developer</span>
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <span>4.8</span>
+                </div>
+              </div>
+
+              <div class="profile-stats">
+                <div class="stat-item">
+                  <h4>156</h4>
+                  <p>Projects</p>
+                </div>
+                <div class="stat-item">
+                  <h4>8+</h4>
+                  <p>Years</p>
+                </div>
+                <div class="stat-item">
+                  <h4>42</h4>
+                  <p>Awards</p>
+                </div>
+              </div>
+
+              <div class="profile-actions">
+                <a href="#" class="btn-primary"><i class="bi bi-download"></i> Download CV</a>
+                <a href="#" class="btn-secondary"><i class="bi bi-envelope"></i> Contact</a>
+              </div>
+
+              <div class="social-connect">
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-github"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
+            <div class="content-wrapper">
+              <div class="bio-section">
+                <div class="section-tag">About Me</div>
+                <h2>Transforming Ideas into Digital Reality</h2>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.</p>
+                <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+              </div>
+
+              <div class="details-grid">
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="250">
+                  <i class="bi bi-briefcase"></i>
+                  <div class="detail-content">
+                    <span>Experience</span>
+                    <strong>8+ Years</strong>
+                  </div>
+                </div>
+
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-mortarboard"></i>
+                  <div class="detail-content">
+                    <span>Degree</span>
+                    <strong>Master of Science</strong>
+                  </div>
+                </div>
+
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="350">
+                  <i class="bi bi-geo-alt"></i>
+                  <div class="detail-content">
+                    <span>Based In</span>
+                    <strong>Portland, OR</strong>
+                  </div>
+                </div>
+
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bi bi-envelope"></i>
+                  <div class="detail-content">
+                    <span>Email</span>
+                    <strong>contact@example.com</strong>
+                  </div>
+                </div>
+
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="150">
+                  <i class="bi bi-phone"></i>
+                  <div class="detail-content">
+                    <span>Phone</span>
+                    <strong>+1 (555) 234-5678</strong>
+                  </div>
+                </div>
+
+                <div class="detail-item" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-calendar-check"></i>
+                  <div class="detail-content">
+                    <span>Availability</span>
+                    <strong>Open to Work</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills-showcase" data-aos="fade-up" data-aos-delay="250">
+                <div class="section-tag">Core Skills</div>
+                <h3>Technical Proficiency</h3>
+
+                <div class="skills-list skills-animation">
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">React &amp; Next.js</span>
+                      <span class="skill-percent">95%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">Node.js &amp; Express</span>
+                      <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">UI/UX &amp; Figma</span>
+                      <span class="skill-percent">88%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">MongoDB &amp; PostgreSQL</span>
+                      <span class="skill-percent">85%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">Docker &amp; AWS</span>
+                      <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Resume</span>
+        <h2>Resume</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-5">
+          <div class="col-lg-6">
+            <div class="experience-section">
+              <div class="section-header" data-aos="fade-right" data-aos-delay="200">
+                <div class="header-content">
+                  <span class="section-badge">Experience</span>
+                  <h2>Professional Journey</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+
+              <div class="experience-cards">
+                <div class="exp-card featured" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="card-header">
+                    <div class="company-logo">
+                      <i class="bi bi-buildings"></i>
+                    </div>
+                    <div class="period-badge">Current</div>
+                  </div>
+                  <div class="card-body">
+                    <h3>Senior Creative Director</h3>
+                    <p class="company-name">Digital Innovation Labs</p>
+                    <span class="duration">2023 - Present</span>
+                    <p class="description">Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.</p>
+                    <div class="skills-tags">
+                      <span class="skill-tag">Leadership</span>
+                      <span class="skill-tag">Strategy</span>
+                      <span class="skill-tag">Innovation</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="exp-card" data-aos="zoom-in" data-aos-delay="350">
+                  <div class="card-header">
+                    <div class="company-logo">
+                      <i class="bi bi-laptop"></i>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3>Product Design Lead</h3>
+                    <p class="company-name">TechForward Solutions</p>
+                    <span class="duration">2020 - 2023</span>
+                    <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam.</p>
+                  </div>
+                </div>
+
+                <div class="exp-card" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="card-header">
+                    <div class="company-logo">
+                      <i class="bi bi-palette"></i>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3>UX Designer</h3>
+                    <p class="company-name">Creative Studio Inc</p>
+                    <span class="duration">2017 - 2020</span>
+                    <p class="description">Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="education-section">
+              <div class="section-header" data-aos="fade-left" data-aos-delay="200">
+                <div class="header-content">
+                  <span class="section-badge">Education</span>
+                  <h2>Academic Background</h2>
+                  <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum.</p>
+                </div>
+              </div>
+
+              <div class="education-timeline" data-aos="fade-left" data-aos-delay="300">
+                <div class="timeline-track">
+                  <div class="timeline-item">
+                    <div class="timeline-marker">
+                      <i class="bi bi-mortarboard-fill"></i>
+                    </div>
+                    <div class="timeline-content">
+                      <div class="education-meta">
+                        <span class="year-range">2015 - 2017</span>
+                        <span class="degree-level">Masters</span>
+                      </div>
+                      <h4>Master of Design Innovation</h4>
+                      <p class="institution">Institute of Creative Arts</p>
+                      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore.</p>
+                      <div class="achievement">
+                        <i class="bi bi-award"></i>
+                        <span>Summa Cum Laude</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item">
+                    <div class="timeline-marker">
+                      <i class="bi bi-book"></i>
+                    </div>
+                    <div class="timeline-content">
+                      <div class="education-meta">
+                        <span class="year-range">2011 - 2015</span>
+                        <span class="degree-level">Bachelor</span>
+                      </div>
+                      <h4>Bachelor of Fine Arts</h4>
+                      <p class="institution">Creative Arts University</p>
+                      <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item">
+                    <div class="timeline-marker">
+                      <i class="bi bi-patch-check-fill"></i>
+                    </div>
+                    <div class="timeline-content">
+                      <div class="education-meta">
+                        <span class="year-range">2016 - 2023</span>
+                        <span class="degree-level">Certificates</span>
+                      </div>
+                      <h4>Professional Certifications</h4>
+                      <div class="certifications-list">
+                        <div class="cert-item">
+                          <span class="cert-name">Advanced UX Research</span>
+                          <span class="cert-year">2023</span>
+                        </div>
+                        <div class="cert-item">
+                          <span class="cert-name">Design Leadership</span>
+                          <span class="cert-year">2022</span>
+                        </div>
+                        <div class="cert-item">
+                          <span class="cert-name">Digital Strategy</span>
+                          <span class="cert-year">2021</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Services</span>
+        <h2>Services</h2>
+        <p>From concept and design to development and promotion — complete full‑stack solutions for your online presence.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-palette"></i>
+              </div>
+              <h4>Brand Identity</h4>
+              <p>Elegant, cohesive brand identities designed to elevate your business and enhance recognition.</p>
+              <a href="{{ url_for('service_details') }}" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item featured">
+              <div class="featured-tag">Featured</div>
+              <div class="icon-wrapper">
+                <i class="bi bi-layout-text-window-reverse"></i>
+              </div>
+              <h4>UI/UX Design</h4>
+              <p>Designing clear, user‑focused interfaces that make every interaction simple, meaningful, and enjoyable.</p>
+              <a href="{{ url_for('service_details') }}" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h4>Development</h4>
+              <p>Building modern, high‑performance websites and applications with clean code and reliable architecture.</p>
+              <a href="{{ url_for('service_details') }}" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-phone"></i>
+              </div>
+              <h4>Mobile Apps</h4>
+              <p>Creating intuitive, high‑quality mobile applications that deliver smooth interactions and real value to users.</p>
+              <a href="{{ url_for('service_details') }}" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-megaphone"></i>
+              </div>
+              <h4>Digital Marketing</h4>
+              <p>Promoting your business through targeted digital campaigns that boost reach, engagement, and conversions.</p>
+              <a href="{{ url_for('service_details') }}" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-search"></i>
+              </div>
+              <h4>SEO Services</h4>
+              <p>Optimizing your website for search engines to boost reach, attract the right audience, and increase conversions.</p>
+              <a href="{{ url_for('service_details') }}" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <h4>Analytics</h4>
+              <p>Turning raw data into clear insights that guide growth, optimize strategy, and reveal real opportunities.</p>
+              <a href="{{ url_for('service_details') }}" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h4>Security</h4>
+              <p>Ensuring your digital products stay safe with reliable protection, secure architecture, and proactive monitoring.</p>
+              <a href="{{ url_for('service_details') }}" class="read-more">
+                <span>Explore</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+            <div class="cta-box">
+              <div class="row align-items-center">
+                <div class="col-lg-8">
+                  <h3>Transform Your Vision Into Reality</h3>
+                  <p>Partner with us to bring your ideas to life with innovative solutions tailored to your needs</p>
+                </div>
+                <div class="col-lg-4 text-lg-end text-center">
+                  <a href="{{ url_for('service_details') }}" class="cta-btn">Start Your Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Portfolio</span>
+        <h2>Portfolio</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+
+                        <!-- Кнопка "Все работы" -->
+                       <li data-filter="*" class="filter-active">All Work</li>
+
+                        <!-- Категории из БД (уникальные) -->
+                         {% set used_categories = [] %}
+                          {% for card in portfolio_cards %}
+                           {% if card.category not in used_categories %}
+                            {% set _ = used_categories.append(card.category) %}
+                            <li data-filter=".{{ card.category_slug }}">{{ card.category }}</li>
+                           {% endif %}
+                          {% endfor %}
+
+          </ul>
+
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+
+                    {% for card in portfolio_cards %}
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item {{ card.category_slug }}">
+                  <div class="portfolio-card">
+                      <div class="portfolio-image-container">
+                          {% if card.image %}
+                    <img src="{{ card.image }}" alt="{{ card.title }}" class="img-fluid" loading="lazy">
+                          {% endif %}
+
+                <a href="{{ url_for('post_page', slug=card.slug) }}">
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <span class="project-category">{{ card.title }}</span>
+              <h4>{{ card.category }}</h4>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="portfolio-meta">
+        <div class="project-tags">
+          <span class="tag">{{ card.tech1 }}</span>
+          <span class="tag">{{ card.tech2 }}</span>
+        </div>
+        <div class="project-year">{{ card.year }}</div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+</div>
+
+        </div>
+
+        <div class="portfolio-bottom" data-aos="fade-up" data-aos-delay="400">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <h3>Like what you see?</h3>
+              <p>Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a href="#contact" class="btn btn-accent">Let's Work Together</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">Contact</span>
+        <h2>Contact</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div>
+                <h3>Address</h3>
+                <p>2847 Oak Street, San Francisco, CA 94102</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <div>
+                <h3>Call Me</h3>
+                <p>+1 (555) 234-5678</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="icon-wrapper">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div>
+                <h3>Email Me</h3>
+                <p>alex@example.com</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-8">
+            <form method="POST" action="{{ url_for('send_message') }}" class="php-email-form">
+
+              <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+
+                <div class="row gy-4">
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                  </div>
+
+                  <div class="col-md-6">
+                  <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                  </div>
+
+                  <div class="col-md-12">
+                  <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                  </div>
+
+                  <div class="col-md-12">
+              <textarea name="message" class="form-control" rows="6" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+            <button type="submit">Send Message</button>
+              </div>
+
+        </div>
+        </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+
+
+
+
+{% endblock content %}
+  

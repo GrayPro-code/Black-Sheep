@@ -1,0 +1,240 @@
+{% extends "base.html" %}
+{% block title %}Service Ditails{% endblock %}
+{% block content %}
+
+  <main class="main">
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+
+          <div class="col-lg-4 order-lg-2">
+
+            <div class="sticky-sidebar">
+
+              <div class="service-card" data-aos="fade-left" data-aos-delay="200">
+                <div class="card-header">
+                  <div class="service-icon">
+                    <i class="bi bi-code-square"></i>
+                  </div>
+                  <h3>Web Development</h3>
+                  <p class="service-tagline">Full-Stack Solutions</p>
+                </div>
+                <div class="card-body">
+                  <div class="price-tag">
+                    <span class="label">Starting at</span>
+                    <span class="price">$2,500</span>
+                  </div>
+                  <ul class="quick-info">
+                    <li>
+                      <i class="bi bi-clock"></i>
+                      <span>4-6 weeks delivery</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-arrow-repeat"></i>
+                      <span>Unlimited revisions</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-shield-check"></i>
+                      <span>60 days support</span>
+                    </li>
+                  </ul>
+                  <div class="cta-buttons">
+                    <a href="#" class="btn-primary">Start Project</a>
+                    <a href="#" class="btn-secondary">Schedule Call</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-card" data-aos="fade-left" data-aos-delay="300">
+                <h4>Have Questions?</h4>
+                <p>Let's discuss your project requirements and how I can help.</p>
+                <div class="contact-methods">
+                  <a href="mailto:hello@example.com" class="contact-item">
+                    <i class="bi bi-envelope"></i>
+                    <span>hello@example.com</span>
+                  </a>
+                  <a href="tel:+15551234567" class="contact-item">
+                    <i class="bi bi-telephone"></i>
+                    <span>+1 (555) 123-4567</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 order-lg-1" style="margin-top: 30px;">
+
+            <div class="service-overview" data-aos="fade-up" data-aos-delay="200">
+              <div class="overview-header">
+                <span class="badge">Premium Service</span>
+                <h2>Professional Web Development That Drives Results</h2>
+              </div>
+              <p class="lead-text">I build custom web experiences that strengthen your digital presence. My work combines thoughtful design, solid development, and smooth performance to create websites that engage users and convert traffic into real results.</p>
+            </div>
+
+            <div class="service-image-showcase" data-aos="zoom-in" data-aos-delay="300">
+              <img src="{{ url_for('static', filename='img/services/services-1.webp') }}" alt="Web Development" class="img-fluid main-image">
+              <div class="image-overlay">
+                <div class="tech-stack">
+                  <span class="tech-item">React</span>
+                  <span class="tech-item">Node.js</span>
+                  <span class="tech-item">MongoDB</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="features-grid" data-aos="fade-up" data-aos-delay="400">
+              <h3 class="section-heading">What You Get</h3>
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="feature-box">
+                    <div class="icon-wrapper">
+                      <i class="bi bi-layers"></i>
+                    </div>
+                    <h4>Modern Architecture</h4>
+                    <p>Scalable, maintainable code structure using the latest web technologies and best practices for long-term success.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="feature-box">
+                    <div class="icon-wrapper">
+                      <i class="bi bi-speedometer2"></i>
+                    </div>
+                    <h4>Lightning Fast</h4>
+                    <p>Optimized performance with lazy loading, code splitting, and CDN integration for instant page loads.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="feature-box">
+                    <div class="icon-wrapper">
+                      <i class="bi bi-phone-landscape"></i>
+                    </div>
+                    <h4>Responsive Design</h4>
+                    <p>Pixel-perfect layouts that adapt seamlessly across all devices, from mobile phones to large desktop screens.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="feature-box">
+                    <div class="icon-wrapper">
+                      <i class="bi bi-graph-up"></i>
+                    </div>
+                    <h4>SEO Optimized</h4>
+                    <p>Search engine friendly structure with semantic HTML, meta tags, and performance optimizations built in.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="workflow-section" data-aos="fade-up" data-aos-delay="500">
+              <h3 class="section-heading">Development Workflow</h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-marker">1</div>
+                  <div class="timeline-content">
+                    <h4>Strategy &amp; Planning</h4>
+                    <p>In the first week, we focus on defining the project vision, analyzing requirements, and building a clear strategic roadmap to ensure a structured and efficient development process.</p>
+                    <span class="duration">1 week</span>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-marker">2</div>
+                  <div class="timeline-content">
+                    <h4>Design &amp; Prototyping</h4>
+                    <p>During the second week, we transform the strategy into visual concepts, creating wireframes and interactive prototypes to define the user experience and finalize the design direction.</p>
+                    <span class="duration">1-2 weeks</span>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-marker">3</div>
+                  <div class="timeline-content">
+                    <h4>Development &amp; Testing</h4>
+                    <p>In the third week, we begin full-scale development, implementing core functionality and conducting continuous testing to ensure stability, performance, and a smooth user experience.</p>
+                    <span class="duration">2-3 weeks</span>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-marker">4</div>
+                  <div class="timeline-content">
+                    <h4>Launch &amp; Optimization</h4>
+                    <p>In the fourth week, we launch the product, monitor real‑world performance, and apply data‑driven optimizations to ensure stability, efficiency, and a seamless user experience.</p>
+                    <span class="duration">3-4 week</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-section" data-aos="fade-up" data-aos-delay="600">
+              <div class="testimonial-card">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <blockquote>
+                  "Working with this team was a smooth and inspiring experience. They quickly understood our goals, delivered clear solutions at every stage, and turned our idea into a polished, high‑quality product. Professional, fast, and truly reliable."
+                </blockquote>
+                <div class="client-info">
+                  <img src="assets/img/person/person-m-5.webp" alt="Michael Chen" class="client-avatar">
+                  <div class="client-details">
+                    <h5>Michael Chen</h5>
+                    <p>Founder, TechStart Inc.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tech-details" data-aos="fade-up" data-aos-delay="700">
+              <h3 class="section-heading">Technologies &amp; Tools</h3>
+              <div class="tech-categories">
+                <div class="tech-category">
+                  <h5>Frontend</h5>
+                  <div class="tech-tags">
+                    <span>React</span>
+                    <span>Vue.js</span>
+                    <span>TypeScript</span>
+                    <span>Tailwind CSS</span>
+                    <span>SASS</span>
+                    <span>BOOTSTRAP</span>
+                  </div>
+                </div>
+                <div class="tech-category">
+                  <h5>Backend</h5>
+                  <div class="tech-tags">
+                    <span>Node.js</span>
+                    <span>PHP</span>
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>Django</span>
+                    <span>REST API</span>
+                  </div>
+                </div>
+                <div class="tech-category">
+                  <h5>Database</h5>
+                  <div class="tech-tags">
+                    <span>MongoDB</span>
+                    <span>PostgreSQL</span>
+                    <span>Redis</span>
+                    <span>Firebase</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Service Details Section -->
+
+  </main>
+{% endblock content %}
